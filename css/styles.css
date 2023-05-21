@@ -384,3 +384,111 @@ main h2
     }
 }
 
+/* Presupuestá */
+
+#presupuesta
+{
+    width: 100%;
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+#detalleConsulta h3, #especificaciones h3
+{
+    box-shadow: none;
+    padding: 15px;
+    color: #76695d;
+    text-decoration:underline;
+}
+
+.input-group-text
+{
+    width: 111px;
+}
+
+.col-md-4
+{
+    max width: 100%;
+    width: 90%;
+}
+
+#validationTextarea
+{
+    height: 300px;
+    width: 95%;
+}
+
+#medidas
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#largo, #ancho, #alto
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#medidas .form-control
+{
+    width: 55px;
+}
+
+.mb-3 button
+{
+    background-color: #d5bdaf;
+    color:#edede9;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.mb-3 button:hover
+{
+    background-color: #76695d;
+}
+
+#adjuntarArchivo
+{
+    width: 500px;
+}
+
+@media (min-width: 992px) 
+{
+    #presupuesta h2
+    {
+        text-align: start;
+    }
+
+    .col-md-4
+    {
+        width: 500px;
+    }
+
+    #medidas
+    {
+        flex-direction: row;
+        width: 500px;
+    }
+
+    #medidas .form-control
+    {
+        width: 55px;
+    }
+
+    #validationTextarea
+    {
+        width: 500px;
+    }
+
+    #formularioPresupuesta
+    {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
