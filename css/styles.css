@@ -1,0 +1,376 @@
+*{margin: 0px;padding: 0px;}
+
+/* General */
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+#vistaGrid
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ol ul
+{
+    list-style: none;
+}
+
+h2
+{ 
+    font-size: large;
+    font-weight: 600;
+    padding: 8px;
+    margin: 20px 0;
+    color: #76695d;
+}
+
+h3
+{
+    font-size: medium;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    
+}
+
+img
+{
+    max-width: 100%;
+}
+
+a
+{
+cursor: pointer;
+text-decoration: none;
+}
+
+/* header */
+
+header
+{
+    position: sticky;
+    top: 0px;
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5ebe0;
+    width: 100%;
+}
+
+header h1
+{
+    font-size: medium;
+    background-color: #d5bdaf;
+    color: #f5ebe0;
+    width: 100%;
+    text-align: center;
+}
+
+#logoGroot
+{
+    width: 100px;
+    align-items: center;
+    padding-top: 8px;
+}
+
+#menu__vistaGrande
+{
+    display: none;
+}
+
+@media (min-width: 768px)
+{
+    #menu__vistaGrande
+    {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    #menu__vistaGrande a
+    {
+        color: #76695d;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #menu__vistaGrande a:hover
+    {
+        background-color:#d5bdaf;
+    }
+}
+
+/* footer & nav */
+
+footer
+{
+    position: sticky;
+    bottom: 0px;
+    background-color: #d5bdaf;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer img
+{
+    width: 30px;
+}
+
+#menu
+{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+}
+
+#menu > li
+{
+    padding: 15px;
+}
+
+#menu__desplegable ul
+{
+    display: none ;
+    position: absolute;
+    list-style: none;
+}
+
+#menu__desplegable:hover > ul
+{
+    display: block;
+    position: absolute;
+    top: -90px;
+}
+
+#menu__desplegable ul li a
+{
+    text-decoration: none;
+    display:block;
+    background-color:  #d5bdaf;
+    color: #edede9;
+    font-weight: 600;
+}
+
+#menu__desplegable ul li a:hover
+{
+    background-color: #c1bfbe;
+}
+
+@media (min-width: 768px)
+{
+    #menu__desplegable
+    {
+        display: none;
+    }
+
+    #menu
+    {
+        justify-content: end;
+    }
+}
+
+/* Index */
+
+/* main */
+
+/* Categorias */
+
+#categorias
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) 
+{
+    #categorias 
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) 
+{
+    #categorias
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+#tituloCategorias
+{
+    text-align: start;
+}
+
+#categorias h3
+{
+    width: 300px;
+    height: 350px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#categorias h3 a
+{
+    text-decoration: none;
+    align-items: end;
+    background-color: #d5bdaf;
+    color: #f5ebe0;
+    padding: 3px;
+}
+
+.categorias h3 a:hover
+{
+    background-color: #edede9;
+    color: #d5bdaf;
+}
+
+#categorias__1
+{
+    background-image: url(img/CategoriaMesas.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+#categorias__2
+{
+    background-image: url(img/CategoriaEscritorios.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+#categorias__3
+{
+    background-image: url(img/CategoriaDeco.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+#categorias__4
+{
+    background-image: url(img/BancoQuebracho.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+/* Mas Vendidos */
+
+#masVendidos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) 
+{
+    #masVendidos 
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) 
+{
+    #masVendidos
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+#masVendido__item1
+{
+    background-image: url(img/BancoQuebrachoChico.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#masVendido__item2
+{
+    background-image: url(img/MesaQuebracho.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#masVendido__item3
+{
+    background-image: url(img/EspejoQuebracho.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#masVendido__item4
+{
+    background-image: url(img/MesaRatonaLapacho.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#masVendidos h3
+{
+    width: 300px;
+    height: 350px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#masVendidos h3 a
+{
+    text-decoration: none;
+    align-items: end;
+    background-color: #d5bdaf;
+    color: #f5ebe0;
+    padding: 3px;
+}
+
+#masVendidos h3 a:hover
+{
+    background-color: #edede9;
+    color: #d5bdaf;
+}
+
+/* Nosotros */
+
+#main__nosotros
+{
+    margin-left: 20px;
+}
+
+#main__nosotros ol
+{
+    margin-left: 20px;
+}
+
+#main__nosotros a
+{
+    color: #76695d;
+    font-weight: 600;
+}
+
+#main__nosotros a:hover
+{
+    background-color:#c1bfbe;
+}
+
