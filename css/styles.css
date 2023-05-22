@@ -312,11 +312,14 @@ main h2
     padding: 5px;
     /* margin-bottom: 15px; */
     font-weight: 400;
+    font-size: medium;
 }
 
 .card-body ul
 {
-    height: 100px;
+    height: 70px;
+    padding: 0px;
+    font-size: small;
 }
 
 .card-body a
@@ -356,12 +359,12 @@ main h2
 
 #main__nosotros
 {
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 #main__nosotros ol
 {
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 #main__nosotros a
@@ -389,7 +392,13 @@ main h2
 {
     width: 100%;
     margin-left: 40px;
+    margin-right:40px;
     overflow: hidden;
+}
+
+.form
+{
+    padding: 15px;
 }
 
 #detalleConsulta h3
@@ -413,7 +422,7 @@ main h2
 #validationTextarea
 {
     height: 300px;
-    width: 95%;
+    width: 100%;
 }
 
 #medidas
@@ -452,7 +461,7 @@ main h2
 
 #adjuntarArchivo
 {
-    width: 500px;
+    width: 100%;
 }
 
 @media (min-width: 992px) 
@@ -479,6 +488,11 @@ main h2
     }
 
     #validationTextarea
+    {
+        width: 500px;
+    }
+
+    #adjuntarArchivo
     {
         width: 500px;
     }
@@ -569,5 +583,21 @@ main h2
     .padreCards
     {
         grid-template-columns: repeat(4,1fr);
+    }
+
+    .intro
+    {
+        color: #76695d;
+        margin-left: 15px;
+    }
+}
+
+/* En Stock */
+
+@media (min-width: 992px) 
+{
+    #enStock h2
+    {
+        text-align: start;
     }
 }
