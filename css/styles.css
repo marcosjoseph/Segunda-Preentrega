@@ -519,9 +519,13 @@ main h2
     top: 150px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     margin: 20px auto;
     z-index: -99;
+    width: 400px;
+    max-width: 100%;
 }
 
 .labelsFiltro label
@@ -538,6 +542,7 @@ main h2
 {
     background-color: #76695d;
 }
+
 
 #filtroCards .card
 {
@@ -566,6 +571,18 @@ main h2
 #todos:checked ~ .padreCards .cat4
 {
     display: flex;
+}
+
+@media (max-width: 424px)
+
+{
+    .labelsFiltro
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) 
