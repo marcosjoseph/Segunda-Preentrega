@@ -209,7 +209,7 @@ main h2
 
 #categorias__1
 {
-    background-image: url(/img/CategoriaMesas.png);
+    background-image: url(img/CategoriaMesas.png);
     background-repeat: none;
     background-size: cover;
 }
@@ -223,14 +223,14 @@ main h2
 
 #categorias__3
 {
-    background-image: url(/img/CategoriaDeco.png);
+    background-image: url(./img/CategoriaDeco.png);
     background-repeat: none;
     background-size: cover;
 }
 
 #categorias__4
 {
-    background-image: url(/img/BancoQuebracho.png);
+    background-image: url(../img/BancoQuebracho.png);
     background-repeat: none;
     background-size: cover;
 }
