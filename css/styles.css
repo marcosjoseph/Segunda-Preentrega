@@ -594,6 +594,11 @@ main h2
 
 /* En Stock */
 
+#enStock
+{
+    margin: 0px 30px;
+}
+
 @media (min-width: 992px) 
 {
     #enStock h2
