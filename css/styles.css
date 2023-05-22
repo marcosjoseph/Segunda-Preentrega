@@ -162,30 +162,23 @@ main h2
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 @media (min-width: 768px) 
 {
     #categorias 
     {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 992px) 
-{
-    #categorias
-    {
-        grid-template-columns: repeat(4,1fr);
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
 
 #categorias h3
 {
-    width: 300px;
     height: 350px;
+    width: 250px;
     text-align:center;
     display: flex;
     flex-direction: column;
@@ -286,8 +279,7 @@ main h2
 }
 
 .card
-{   margin: 10px;
-    width: 300px;
+{   margin: 5px;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
     box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);  
@@ -296,6 +288,7 @@ main h2
 .card img
 {
     height: 300px;
+    width: 100%;
 }
 
 .card-body
@@ -340,7 +333,7 @@ main h2
 }
 
 
-@media (min-width: 992px) 
+@media (min-width: 1024px) 
 {   
     #masVendidos
     {
@@ -349,8 +342,9 @@ main h2
     #masVendidosXL
     {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -378,7 +372,7 @@ main h2
     background-color:#c1bfbe;
 }
 
-@media (min-width: 992px) 
+@media (min-width: 1024px) 
 {
     #main__nosotros h2
     {
@@ -464,7 +458,7 @@ main h2
     width: 100%;
 }
 
-@media (min-width: 992px) 
+@media (min-width: 1024px) 
 {
     #presupuesta h2
     {
@@ -589,13 +583,15 @@ main h2
 {
     .padreCards
     {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         gap: 10px 20px;
     }
 }
 
-@media (min-width: 992px) 
+@media (min-width: 1024px) 
 {
     .padreCards
     {
@@ -614,10 +610,38 @@ main h2
 #enStock
 {
     margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (min-width: 992px) 
+.stock
 {
+    margin: 20px 0px;
+}
+
+
+@media (min-width: 768px) 
+{
+    .padreCardsStock
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) 
+{
+    .intro
+    {
+        color: #76695d;
+        margin-left: 15px;
+    }
+
     #enStock h2
     {
         text-align: start;
