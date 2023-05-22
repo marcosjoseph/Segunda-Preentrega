@@ -22,33 +22,249 @@
 
             <h1 id="bienvenida">Bienvenidos a Groot! Trabajamos la madera</h1>
 
-
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a  href="../index.html">
-                        <img id="logoGroot" src="../img/LogoGroot.png" alt="Logo Groot">
-                    </a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <a  href="../index.html"> <img id="logoGroot" src="../img/LogoGroot.png" alt="Logo Groot"> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                      <a class="nav-link" href="nosotros.html">Nosotros</a>
-                      <a class="nav-link" href="nuestrosTrabajos.html">Nuestros Trabajos</a>
-                      <a class="nav-link" href="enStock.html">En Stock</a>
-                      <a class="nav-link" href="presupuesta.html">Presupuestá</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="nuestrosTrabajos.html">Nuestros Trabajos</a>
+                    <a class="nav-link" href="enStock.html">En Stock</a>
+                    <a class="nav-link" href="presupuesta.html">Presupuestá</a>
                     </div>
-                  </div>
+                    </div>
                 </div>
-              </nav>
+            </nav>
 
         </header>
 
-        <main id="">
+        <main id="nuestrosTrabajos">
 
-                      
+            <div id="filtroCards" class="container-fluid">
+ 
+                <input type="radio" name="seleccionado" id="cat1">
+                <input type="radio" name="seleccionado" id="cat2">
+                <input type="radio" name="seleccionado" id="cat3">
+                <input type="radio" name="seleccionado" id="cat4">
+                <input type="radio" name="seleccionado" id="todos" checked>
 
+                <div class="labelsFiltro z-3">
+                <label for="cat1">Mesas</label>
+                <label for="cat2">Escritorios</label>
+                <label for="cat3">Deco</label>
+                <label for="cat4">Exterior</label>
+                <label for="todos">Todo</label>
+                </div>
+
+                <div class="padreCards">
+
+                <!-- Cat 1 Card 1 -->
+
+                <div class="card cat1" style="width: 18rem;">
+                    <img src="../img/MesaLapachoyHierro.png" class="card-img-top" alt="Mesa Lapacho y Hierro">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Mesa Juana</h5>
+                        <ul>
+                            <li>Hecha en Lapacho y Hierro.</li>
+                            <li>Altura 80 cm x anchos y largos varios.</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>
+
+                <!-- Cat 1 Card 2 -->
+
+                <div class="card cat1" style="width: 18rem;">
+                    <img src="../img/MesaPetiribi.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Mesa Martina</h5>
+                        <ul>
+                            <li>Hecha en Petiribi Macizo</li>
+                            <li>Altura 80 cm x anchos y largos varios.</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>               
+
+                <!-- Cat 1 Card 3 -->
+
+                <div class="card cat1" style="width: 18rem;">
+                    <img src="../img/MesaRedondaParaiso.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Mesa Raquel</h5>
+                        <ul>
+                            <li>Tapa en Enchapado de Paraiso.</li>
+                            <li>Base en Paraiso Macizo.</li>
+                            <li>Consultanos por medidas.</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>               
+
+                <!-- Cat 1 Card 4 -->
+
+                <div class="card cat1" style="width: 18rem;">
+                    <img src="../img/MesaRatonaLapacho.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Mesa Sofía</h5>
+                        <ul>
+                            <li>Mesa de Arrime en madera maciza.</li>
+                            <li>Consultanos por maderas y medidas.</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>              
+
+                <!-- Cat 2 Card 1 -->
+
+                <div class="card cat2" style="width: 18rem;">
+                    <img src="../img/CategoriaEscritorios.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Escritorio XL</h5>
+                        <ul>
+                            <li>Escritorio para 2 Personas.</li>
+                            <li>Entablonado de Eucaliptus & Melamina</li>
+                            <li>Consultanos por tus medidas!</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>                      
+
+                <!-- Cat 2 Card 2 -->
+
+                <div class="card cat2" style="width: 18rem;">
+                    <img src="../img/EscritorioPinoTeayHierro.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Escritorio Tea</h5>
+                        <ul>
+                            <li>Pinotea reciclada & hierro</li>
+                            <li>Consultanos por tus medidas!</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>
+
+                <!-- Cat 2 Card 3 -->
+
+                <div class="card cat2" style="width: 18rem;">
+                    <img src="../img/EscritorioMelaminayParaiso.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Escritorio Marcos</h5>
+                        <ul>
+                            <li>Tapa y Cajonera en Melamina./li>
+                            <li>Base en Paraíso Macizo.</li>
+                            <li>Consultanos por tus medidas!</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>
+                
+                <!-- Cat 3 Card 1 -->
+
+                <div class="card cat3" style="width: 18rem;">
+                    <img src="../img/BarraPinotea.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Barra Agustín</h5>
+                        <ul>
+                            <li>Hecha en Pino Tea Reciclada</li>
+                            <li>Consultanos por tus medidas!</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>
+
+                <!-- Cat 3 Card 2 -->
+
+                <div class="card cat3" style="width: 18rem;">
+                    <img src="../img/CavaPetiribi.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Cavita</h5>
+                        <ul>
+                            <li>En petiribi macizo.</li>
+                            <li>Consultanos por tus medidas!</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>               
+
+                <!--  Cat 3 Card 3 -->
+
+                <div class="card cat3" style="width: 18rem;">
+                    <img src="../img/MesaArrimePetiribiyMarmol.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Barra Paulina</h5>
+                        <ul>
+                            <li>Tapa en Marmol.</li>
+                            <li>Base en Petiribi macizo.</li>
+                            <li>Consultanos por tus medidas!</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>               
+
+                <!-- Cat 3 Card 4 -->
+
+                <div class="card cat3" style="width: 18rem;">
+                    <img src="../img/EspejoQuebracho.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Espejo Quebracho</h5>
+                        <ul>
+                            <li>En quebracho colorado.</li>
+                            <li>Consultanos por tus medidas!</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>               
+
+                <!-- Cat 4 Card 1 -->
+
+                <div class="card cat4" style="width: 18rem;">
+                    <img src="../img/BancoQuebrachoChico.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Banco Quebracho</h5>
+                        <ul>
+                            <li>Ideales para exterior.</li>
+                            <li>Altura asiento 30 cm x 45 cm profundo x anchos varios.</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>                      
+
+                <!-- Cat 4 Card 2 -->
+
+                <div class="card cat4" style="width: 18rem;">
+                    <img src="../img/MesaQuebracho.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Mesa Quebracho</h5>
+                        <ul>
+                            <li>Ideales para galerías.</li>
+                            <li>Altura 80 cm x largos y anchos varios.</li>
+                            <li>Consultanos por tus medidas!</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>
+
+                <!-- Cat 4 Card 3 -->
+
+                <div class="card cat4" style="width: 18rem;">
+                    <img src="../img/BancoRecibidorQuebracho.png" class="card-img-top" alt="Banco Quebracho">
+                    <div class="card-body">
+                        <h5 class="carousel-title">Recibidor Quebracho</h5>
+                        <ul>
+                            <li>Quebracho Colorado & Hierro</li>
+                            <li>Altura asiento x 45 cm x largos y anchos varios.</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=541121580900" target="_blank" class="btn btn-primary">Quiero el mio!</a>
+                    </div>
+                </div>  
+                
+                </div>
+            </div>                
         </main>
 
 

@@ -288,7 +288,6 @@ main h2
 .card
 {   margin: 10px;
     width: 300px;
-    height: 550px;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
     box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);  
@@ -311,7 +310,7 @@ main h2
     color:#76695d;
     border-radius: 5px;
     padding: 5px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     font-weight: 400;
 }
 
@@ -327,7 +326,7 @@ main h2
     border: none;
     border-radius: 5px;
     padding: 5px;
-    margin-bottom: 15px;
+    margin: 15px 0;
     font-weight: 400;
 }
 
@@ -393,7 +392,7 @@ main h2
     overflow: hidden;
 }
 
-#detalleConsulta h3, #especificaciones h3
+#detalleConsulta h3
 {
     box-shadow: none;
     padding: 15px;
@@ -408,7 +407,6 @@ main h2
 
 .col-md-4
 {
-    max width: 100%;
     width: 90%;
 }
 
@@ -484,11 +482,92 @@ main h2
     {
         width: 500px;
     }
+}
 
-    #formularioPresupuesta
+/* Nuestros Productos */
+
+#filtroCards
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#filtroCards input
+{
+    display: none;
+}
+
+.labelsFiltro
+{
+    position: sticky;
+    top: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 20px auto;
+    z-index: -99;
+}
+
+.labelsFiltro label
+{
+    background-color: #d5bdaf;
+    color:#edede9;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.labelsFiltro label:hover
+{
+    background-color: #76695d;
+}
+
+#filtroCards .card
+{
+    display: none;
+    margin: 30px 0;
+}
+
+.card-img-top img
+{
+    height: 300px;
+}
+
+
+#cat1:checked ~ .padreCards .cat1,
+#cat2:checked ~ .padreCards .cat2,
+#cat3:checked ~ .padreCards .cat3,
+#cat4:checked ~ .padreCards .cat4
+{
+    display: flex;
+}
+
+
+#todos:checked ~ .padreCards .cat1,
+#todos:checked ~ .padreCards .cat2,
+#todos:checked ~ .padreCards .cat3,
+#todos:checked ~ .padreCards .cat4
+{
+    display: flex;
+}
+
+@media (min-width: 768px) 
+{
+    .padreCards
     {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 20px;
     }
 }
 
+@media (min-width: 992px) 
+{
+    .padreCards
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
